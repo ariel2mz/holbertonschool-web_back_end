@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-from typing import List
+#!/usr/bin/env python3
 """
 asdsadsadsa
 """
