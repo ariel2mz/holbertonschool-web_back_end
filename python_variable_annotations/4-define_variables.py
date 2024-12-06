@@ -7,7 +7,11 @@ pi, a float with a value of 3.14
 i_understand_annotations, a boolean with a value of True
 school, a string with a value of “Holberton”
 """
-int a = 1
-float pi = 3.14
-bool i_understand_annotations = True
-str school = "Holberton"
+a: int
+a = 1
+pi: float 
+pi = 3.14
+i_understand_annotations: bool
+i_understand_annotations = True
+school: str 
+school = "Holberton"
