@@ -5,6 +5,7 @@ from typing import Union, Tuple
 This module provides a funh a string and the square of a numeric value.
 """
 
+
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """
     Create a tuple with a string and the square of a numeric value.
