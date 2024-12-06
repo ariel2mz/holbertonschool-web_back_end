@@ -8,10 +8,13 @@ asdsadsa
 
 def sum_list(input_list: List[float]) -> float:
     """
-    sadsadsadsa
-    sadsadsa
+    Compute the sum of a list of floats.
 
-    asdsadsa
+    Args:
+        input_list (List[float]): A list of float numbers to sum.
+
+    Returns:
+        float: The sum of all elements in the list.
     """
 
     return sum(input_list)
