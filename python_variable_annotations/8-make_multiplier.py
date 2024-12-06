@@ -16,6 +16,8 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
     Returns:
         Callable[[float], float]:result of multiplying it by the multiplier. 
     """
+
+    
     def multiplier_function(value: float) -> float:
         """
         asdsadsadsad
