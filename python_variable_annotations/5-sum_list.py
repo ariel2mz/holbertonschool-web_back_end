@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 from typing import List
 """
-asdsadsadsa
-asdsadsa
+This module provides a function to compute the sum of a list of floats.
 """
 
 
