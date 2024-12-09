@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+QUE PONGO ACA
+"""
 import asyncio
 import random
 
