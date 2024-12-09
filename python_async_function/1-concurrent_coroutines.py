@@ -5,7 +5,7 @@ sadsadasdsa
 
 import asyncio
 from typing import List
-from basic_async_syntax import wait_random  # Replace `your_file_name` with the name of the file containing wait_random
+from basic_async_syntax import wait_random
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
@@ -14,7 +14,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     delays = []
     for _ in range(n):
         delays.append(asyncio.create_task(wait_random(max_delay)))
-    
+
     completed_delays = []
     for delay_task in asyncio.as_completed(delays):
         completed_delay = await delay_task
