@@ -8,7 +8,7 @@ from typing import List
 from concurrent_coroutines import wait_n
 
 
-async def measure_time(n: int, max_delay: int) -> float:
+def measure_time(n: int, max_delay: int) -> float:
     """
     asdsadas
 
