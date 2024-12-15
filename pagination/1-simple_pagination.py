@@ -28,15 +28,18 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """Return the appropriate page of the dataset."""
-        assert isinstance(page, int) and page > 0, "page must be a positive integer"
-        assert isinstance(page_size, int) and page_size > 0, "page_size must be a positive integer"
+        assert isinstance(page, int), "page must be an integer"
+        assert page > 0, "page must be positive"
+        assert isinstance(page_size, int), "page_size must be an integer"
+        assert page_size > 0, "page_size must be positive"
 
         start_index, end_index = index_range(page, page_size)
         dataset = self.dataset()
         if start_index < len(dataset):
-            return dataset[start_index:end_index] 
+            return dataset[start_index:end_index]
         else:
             return []
+
 
 def index_range(page, page_size):
     """Calculate the start and end indexes for a given page and page size."""
