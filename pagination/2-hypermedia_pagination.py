@@ -39,7 +39,6 @@ class Server:
             return dataset[start_index:end_index]
         else:
             return []
-        
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """Return a dictionary with pagination details."""
