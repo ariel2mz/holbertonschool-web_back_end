@@ -17,6 +17,7 @@ async def async_generator() -> Generator[float, None, None]:
         await asyncio.sleep(1)
         yield random.uniform(0, 10)
 
+
 async def async_comprehension() -> List[float]:
     """
     asdsadsadsa
