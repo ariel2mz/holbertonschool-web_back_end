@@ -7,9 +7,10 @@ import asyncio
 import random
 from typing import Generator, List
 
+
 async def async_generator() -> Generator[float, None, None]:
     """
-    jijiji un for de 10 
+    jijiji un for de 10
     y una cosa q saque de google
     """
     for _ in range(10):
