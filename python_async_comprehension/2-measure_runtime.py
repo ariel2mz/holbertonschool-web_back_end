@@ -4,6 +4,7 @@ no tiene sentido comentar esto
 """
 
 import asyncio
+import time
 import random
 from typing import Generator, List
 
@@ -29,11 +30,9 @@ async def measure_runtime() -> float:
     """
     asdasdsadsada
     """
-    start_time = asyncio.get_event_loop().time()
-    await asyncio.gather(async_comprehension(),
-                        async_comprehension(),
-                        async_comprehension(),
-                        async_comprehension()
-                        )
-    total_time = asyncio.get_event_loop().time() - start_time
+    start_time = time.time()
+    tasks = [async_comprehension() for _ in range(4)]
+    await asyncio.gather(*tasks)
+    end_time = time.time()
+    total_time = end_time - start_time
     return total_time
