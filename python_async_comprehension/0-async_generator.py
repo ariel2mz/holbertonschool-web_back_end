@@ -6,7 +6,7 @@ import asyncio
 import random
 from typing import AsyncGenerator, List
 
-async def async_generator() -> AsyncGenerator[float, None, None]:
+async def async_generator() -> AsyncGenerator[float, None]:
     """
     jijiji un for de 10 
     y una cosa q saque de google
