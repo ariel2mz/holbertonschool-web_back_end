@@ -1,18 +1,12 @@
-#!/usr/bin/node
+process.stdout.write("Welcome to Holberton School, what is your name?");
 
-const readline = require('readline');
+process.stdin.on('data', (data) => {
+    const name = data.toString().trim();
+    const message = "\nYour name is: ${name}\n"
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+    process.stdout.write(message);
 
-rl.question('Welcome to Holberton School, what is your name?\n', (name) => {
-  process.stdout.write('Your name is: ' + name + '\r'); // Ensure carriage return
-  process.stdout.write('\n');
-  rl.close();
-});
-
-rl.on('close', () => {
-  process.stdout.write('This important software is now closing');
+    
+    process.stdout.write("This important software is now closing\n");
+    process.exit();
 });
