@@ -1,4 +1,4 @@
-function sayHello(texto) {
+function displayMessage(texto) {
     console.log(texto);
 }
 module.exports = displayMessage;
