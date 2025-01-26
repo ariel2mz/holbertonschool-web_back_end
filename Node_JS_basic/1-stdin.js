@@ -13,5 +13,5 @@ rl.question('Welcome to Holberton School, what is your name?\n', (name) => {
 });
 
 rl.on('close', () => {
-  process.stdout.write('\nThis important software is now closing\n'); // Ensure carriage return
+  process.stdout.write('\nThis important software is now closing');
 });
