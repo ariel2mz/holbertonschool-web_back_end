@@ -1,1 +1,2 @@
+// hola
 mongo --eval "show dbs"
