@@ -18,9 +18,11 @@ function countStudents(filePath) {
 
       const fields = lines.slice(1).reduce((acc, line) => {
         const [firstname, , , field] = line.split(',');
-        if (!acc[field]) acc[field] = [];
+        if (!acc[field]) {
+          acc[field] = [];
+        }
         acc[field].push(firstname);
-        return acc;
+        return acc; // Ensure the accumulator is returned
       }, {});
 
       const totalStudents = Object.values(fields).flat().length;
