@@ -1,5 +1,7 @@
 // comentario
-#!/bin/bash
+result = dbName.school.insertOne({
+    name: "Holberton school"
+});
+
 // comentario
-echo 'db.school.insert({ name: "Holberton school" })' | mongo $1 --quiet
-echo "WriteResult({ \"nInserted\" : 1 })"
+print("WriteResult({ \"nInserted\" : " + (result.acknowledged ? 1 : 0) + " })");
