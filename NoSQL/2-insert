@@ -1,2 +1,4 @@
+// comentario
 #!/bin/bash
+// comentario
 echo 'db.school.insert({ name: "Holberton school" })' | mongo $1
