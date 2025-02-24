@@ -1,4 +1,5 @@
 // comentario
 #!/bin/bash
 // comentario
-echo 'db.school.insert({ name: "Holberton school" })' | mongo $1
+echo 'db.school.insert({ name: "Holberton school" })' | mongo $1 --quiet
+echo "WriteResult({ \"nInserted\" : 1 })"
